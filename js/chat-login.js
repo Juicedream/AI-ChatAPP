@@ -7,7 +7,7 @@ function showLogin() {
   let getStartedDiv = document.getElementById('js-get-started-div');
   let loginDiv = document.getElementById('js-login-div');
 
-    getStartedDiv.style.display = 'none';
+  getStartedDiv.style.display = 'none';
   // Show loading screen
   loadingScreen.style.display = 'block';
 
@@ -31,14 +31,26 @@ function getCredentials() {
   let userName = document.querySelector('.js-username').value;
   let passWord = document.querySelector('.js-password').value;
   let message = document.querySelector('.js-message');
-  if((userName === '' || passWord === '')){
+  let loadingScreen = document.getElementById('loadingScreen');
+    let loginDiv = document.getElementById('js-login-div');
+  if ((userName === '' || passWord === '')) {
     message.classList.remove('success');
     message.classList.add('error');
-    message.innerHTML= 'Fill in the required fields';
-  }else if (userName === 'Admin' && passWord === 'root@123') {
-      message.classList.remove('error');
-      message.classList.add('success');
-      message.innerHTML = 'Login successful!';
+    message.innerHTML = 'Fill in the required fields';
+  } else if (userName === 'Admin' && passWord === 'root@123') {
+    message.classList.remove('error');
+    message.classList.add('success');
+    message.innerHTML = 'Login successful!';
+    loginDiv.style.display = 'none';
+    loadingScreen.style.display = 'block';
+
+    setTimeout(function () {
+
+      loadingScreen.style.display = 'none';
+      window.location.href = '/html/chat-room.html';
+
+
+    }, 4000);
 
   } else {
     message.classList.remove('success');
