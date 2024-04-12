@@ -1,0 +1,217 @@
+body{
+  background-image: linear-gradient(to bottom right, rgb(210, 240, 240), rgb(238, 182, 227));
+  background-repeat: no-repeat;
+  font-family:"Poppins", sans-serif ;
+
+}
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 158px;
+  display: flex;
+}
+
+.container .card{
+  display: none;
+  flex: 0.4;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background: white;
+  padding: 40px 20px 40px 20px;
+  box-shadow: 2px 2px rgb(78, 76, 76);
+  transition: all ease in 500ms;
+}
+
+.card .box h2{
+text-align: center;
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+
+.card .box p{
+text-align: center;
+margin-top: 2px;
+font-size: 18px;
+font-weight: 300;
+color: rgb(238, 182, 227);
+}
+
+.card .box .js-message.error{
+background: rgb(210, 240, 240);
+text-align: center;
+margin-top: 8px;
+font-size: 20px;
+font-weight: 300;
+color: rgb(188, 6, 6);
+}
+
+.card .box .js-message.success{
+background: rgb(210, 240, 240);
+text-align: center;
+margin-top: 8px;
+font-size: 18px;
+font-weight: 300;
+color: rgb(21, 218, 21);
+}
+
+
+.card .box img{
+  height: 80%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.card .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .box input{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 25px;
+  padding-left: 30px;
+  background: transparent;
+  font-size: 20px;
+  border-color: rgb(210, 240, 240);
+  margin-bottom: 20px;
+}
+.card .box input:focus {
+    outline: none; /* Removes the default outline */
+}
+
+.card .box i{
+  width: 10%;
+  color:  rgb(85, 212, 212);
+  font-weight: 800;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding-right: 1px;
+  transform: translate(-420%, 280%);
+}
+
+.card .box button{
+background: rgb(85, 212, 212);
+border: none;
+width: 50%;
+border-radius: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+box-shadow: 2px 1px rgb(78, 76, 76);
+cursor: pointer;
+font-size: 22px;
+color: white;
+}
+
+.loading-screen{
+  display: none;
+  flex: 0.4;
+  width: 80%;
+  margin-top: auto;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 5px;
+  background: white;
+  padding: 40px 20px 40px 20px;
+  box-shadow: 2px 2px rgb(78, 76, 76);
+}
+
+
+.loading-screen p{
+text-align: center;
+margin-top: 2px;
+font-size: 32px;
+font-weight: 300;
+color: rgb(238, 182, 227);
+}
+
+.loading-screen img{
+  height: 220%;
+  width: 80%;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.container .card1{
+  flex: 0.4;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background: white;
+  padding: 40px 20px 40px 20px;
+  box-shadow: 2px 2px rgb(78, 76, 76);
+}
+
+
+
+.card1 .box p{
+text-align: center;
+margin-top: 2px;
+font-size: 18px;
+font-weight: 300;
+color: black;
+}
+
+.card1 .box img{
+  height: 80%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.card1 .box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.card1 .box button i{
+  width: 10%;
+  color:  white;
+  font-weight: 800;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding-right: 1px;
+  transform: translate(-420%, 10%);
+  
+}
+
+.card1 .box button{
+background: rgb(85, 212, 212);
+border: none;
+width: 80%;
+border-radius: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+box-shadow: 2px 1px rgb(78, 76, 76);
+cursor: pointer;
+font-size: 22px;
+color: white;
+}
+
+
+
+

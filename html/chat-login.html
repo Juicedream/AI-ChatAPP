@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f3b1b95936.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/chat-login.css">
+  <title>ChatApp Login Page</title>
+</head>
+<!-- Get started screen -->
+<body>
+  <div class="container">
+    <div class="card1" id="js-get-started-div">
+      <div class="box">
+        <img src="../images/startup.gif" alt="chat-app-animation">
+      </div>
+      <div class="box">
+        <p>Welcome to AI chat app.</p>
+        <p>Man's best friend</p>
+        <p>Created by Jude Nwadiogor</p>
+        <button type="submit" class="js-get-started-button">Get Started<i class="fa-solid fa-arrow-right"></i> </button>
+      </div>
+    </div>
+    
+<!-- Loading screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <img src="../images/loading-animation.gif" alt="loading-animation">
+      <p>Loading...</p>
+    </div>
+
+
+    <div class="card" id="js-login-div">
+      <div class="box">
+        <img src="../images/Animation - 1712905483905.gif" alt="chat-app-animation">
+      </div>
+      <div class="box">
+        <h2>Login</h2>
+        <p>to chat</p>
+        <p class="js-message"></p>
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" id="" placeholder="Username" class="username js-username">
+        <i class="fa-solid fa-lock js-lock-sign"></i>
+        <input type="password" name="password" placeholder="Password" class="password js-password" id="passwordInput">
+        <button type="submit" class="js-login-button">Login</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="module" src="../js/chat-login.js"></script>
+</body>
+
+</html>
